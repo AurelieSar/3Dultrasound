@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile version="1">
+    <PropertyWarehouse>
+        <properties>
+            <property>
+                <name>GraphsPreferredPostLayout</name>
+                <value>Channel</value>
+                <defaultValue>Channel</defaultValue>
+            </property>
+            <property>
+                <name>SkeletonCreationPose</name>
+                <value>1</value>
+                <defaultValue>3</defaultValue>
+            </property>
+            <property>
+                <name>SkeletonDefaultMarkerset</name>
+                <value>2016</value>
+                <defaultValue>2016</defaultValue>
+            </property>
+            <property>
+                <name>Streaming</name>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
+            </property>
+            <property>
+                <name>VRPNStreaming</name>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
+            </property>
+            <property>
+                <name>TrackdStreaming</name>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
+            </property>
+            <property>
+                <name>DialogExportGroupPath</name>
+                <value>D:/Corentin_RCV/</value>
+                <defaultValue>D:/Corentin_RCV/</defaultValue>
+            </property>
+            <property>
+                <name>DialogOtherGroupPath</name>
+                <value>D:/A&amp;M&amp;H/Calibrations</value>
+                <defaultValue>D:/HetAmanip/Calibration</defaultValue>
+            </property>
+            <property>
+                <name>DialogProfileGroupPath</name>
+                <value>C:/Users/LaboMIP/PlusApp-2.8.0.20191105-Win64/config/CalibSpatiale_Template</value>
+                <defaultValue>C:/Users/LaboMIP/PlusApp-2.8.0.20191105-Win64/config</defaultValue>
+            </property>
+            <property>
+                <name>DialogTakeGroupPath</name>
+                <value>D:/A&amp;M&amp;H/Calibrations/2021 - 04 - 23</value>
+                <defaultValue>C:/Users/LaboMIP/Documents/OptiTrack/Session 2021-01-11/</defaultValue>
+            </property>
+            <property>
+                <name>PCResidual</name>
+                <value>0.002626</value>
+                <defaultValue>0.002624</defaultValue>
+            </property>
+            <property>
+                <name>PCMaxRayLength</name>
+                <value>2.975568</value>
+                <defaultValue>3.679119</defaultValue>
+            </property>
+            <property>
+                <name>TrajNumPasses</name>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+            </property>
+            <property>
+                <name>TrajRBAssistedPredictionRadius</name>
+                <value>10</value>
+                <defaultValue>10</defaultValue>
+            </property>
+            <property>
+                <name>Maximum2DPoints</name>
+                <value>512</value>
+                <defaultValue>512</defaultValue>
+            </property>
+            <property>
+                <name>TrajTrajectoryBased</name>
+                <value>false</value>
+                <defaultValue>false</defaultValue>
+            </property>
+            <property>
+                <name>C3DExporterXAxis</name>
+                <value>0</value>
+            </property>
+            <property>
+                <name>C3DExporterYAxis</name>
+                <value>5</value>
+            </property>
+            <property>
+                <name>C3DExporterZAxis</name>
+                <value>2</value>
+            </property>
+        </properties>
+    </PropertyWarehouse>
+    <MouseActions version="1">
+        <assignment name="ExpandSelectInView">
+            <buttons invertX="0" invertY="0">
+                <left/>
+            </buttons>
+            <modifiers>
+                <shift/>
+            </modifiers>
+        </assignment>
+        <assignment name="PanView">
+            <buttons invertX="0" invertY="0">
+                <middle/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+        <assignment name="RotateView">
+            <buttons invertX="0" invertY="0">
+                <right/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+        <assignment name="ScrubTime">
+            <buttons invertX="0" invertY="0">
+                <left/>
+            </buttons>
+            <modifiers>
+                <alt/>
+            </modifiers>
+        </assignment>
+        <assignment name="SelectInView">
+            <buttons invertX="0" invertY="0">
+                <left/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+        <assignment name="ToggleSelectInView">
+            <buttons invertX="0" invertY="0">
+                <left/>
+            </buttons>
+            <modifiers>
+                <ctrl/>
+            </modifiers>
+        </assignment>
+        <assignment name="ZoomView">
+            <buttons invertX="0" invertY="0">
+                <wheel/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+    </MouseActions>
+    <ActionManager>
+        <actions/>
+        <hotkeys version="1">
+            <hotkey key="Space" action="StartStopRecordOrPlayback"/>
+            <hotkey key=";" action="ToggleViewTrackedRays"/>
+            <hotkey key="A" action="IncrementBackward"/>
+            <hotkey key="B" action="EndSelection"/>
+            <hotkey key="C" action="FillSelectedCubic"/>
+            <hotkey key="D" action="ToggleQuickSelect"/>
+            <hotkey key="E" action="Rotate3DObject"/>
+            <hotkey key="F" action="FrameSelectedInView"/>
+            <hotkey key="G" action="ToggleFollowSelected"/>
+            <hotkey key="I" action="SetVideoToMJPEGMode"/>
+            <hotkey key="L" action="ToggleMarkerLabels"/>
+            <hotkey key="O" action="SetVideoToObjectMode"/>
+            <hotkey key="P" action="SampleProbe"/>
+            <hotkey key="Q" action="Select3DObject"/>
+            <hotkey key="R" action="Scale3DObject"/>
+            <hotkey key="S" action="IncrementForward"/>
+            <hotkey key="T" action="ToggleEditAssets"/>
+            <hotkey key="U" action="SetVideoToGrayScaleMode"/>
+            <hotkey key="V" action="StartSelection"/>
+            <hotkey key="W" action="Move3DObject"/>
+            <hotkey key="X" action="SmoothSelectedNodesSelectedTime"/>
+            <hotkey key="Z" action="FindNextGap"/>
+            <hotkey key="[" action="SetStartOfWorkingRange"/>
+            <hotkey key="]" action="SetEndOfWorkingRange"/>
+            <hotkey key="~" action="ToggleLiveEdit"/>
+            <hotkey key="Shift+;" action="ToggleViewUntrackedRays"/>
+            <hotkey key="Shift+B" action="Deselect"/>
+            <hotkey key="Shift+C" action="FillSelectedPattern"/>
+            <hotkey key="Shift+D" action="Unlabel"/>
+            <hotkey key="Shift+F" action="FrameAllInView"/>
+            <hotkey key="Shift+V" action="SelectAll"/>
+            <hotkey key="Shift+X" action="SmoothAllNodesSelectedTime"/>
+            <hotkey key="Shift+Z" action="FindPreviousGap"/>
+            <hotkey key="Shift+[" action="SetWorkingRangeToPlayRange"/>
+            <hotkey key="Shift+]" action="SetWorkingRangeToPlayRange"/>
+            <hotkey key="Ctrl+1" action="CalibrationLayout"/>
+            <hotkey key="Ctrl+2" action="CreateAssetsLayout"/>
+            <hotkey key="Ctrl+3" action="CaptureLayout"/>
+            <hotkey key="Ctrl+4" action="EditLayout"/>
+            <hotkey key="Ctrl+5" action="UserLayout1"/>
+            <hotkey key="Ctrl+6" action="UserLayout2"/>
+            <hotkey key="Ctrl+7" action="UserLayout3"/>
+            <hotkey key="Ctrl+8" action="UserLayout4"/>
+            <hotkey key="Ctrl+9" action="UserLayout5"/>
+            <hotkey key="Ctrl+O" action="OpenFile"/>
+            <hotkey key="Ctrl+P" action="ClearSamples"/>
+            <hotkey key="Ctrl+R" action="ResetSkeletonTracking"/>
+            <hotkey key="Ctrl+S" action="SaveTake"/>
+            <hotkey key="Ctrl+T" action="CreateRigidBody"/>
+            <hotkey key="Ctrl+Y" action="Redo"/>
+            <hotkey key="Ctrl+Z" action="Undo"/>
+            <hotkey key="Ctrl+Shift+C" action="FillSelectedModel"/>
+            <hotkey key="Ctrl+Shift+P" action="StartCalibration"/>
+            <hotkey key="Ctrl+Shift+S" action="SaveTakeAs"/>
+            <hotkey key="Ctrl+Shift+Z" action="Redo"/>
+            <hotkey key="Ctrl+Alt+Z" action="Undo"/>
+            <hotkey key="Ctrl+Alt+Shift+S" action="ExportData"/>
+            <hotkey key="Meta+Left" action="StepTimeBackward"/>
+            <hotkey key="Meta+Up" action="PageTimeForward"/>
+            <hotkey key="Meta+Right" action="StepTimeForward"/>
+            <hotkey key="Meta+Down" action="PageTimeBackward"/>
+            <hotkey key="Meta+Ctrl+Shift+Left" action="Rewind"/>
+            <hotkey key="Meta+Ctrl+Shift+Right" action="FastForward"/>
+        </hotkeys>
+        <actionProperties>
+            <action ID="StartStopRecordOrPlayback">
+                <properties>
+                    <property>
+                        <name>TimeManagementActionTakeNamingMode</name>
+                        <value>0</value>
+                        <defaultValue>1</defaultValue>
+                    </property>
+                    <property>
+                        <name>TimeManagementActionTakeName</name>
+                        <value>Take 2021-05-27 03.36.23 PM</value>
+                        <defaultValue>Take 2021-01-11 12.13.21 PM</defaultValue>
+                    </property>
+                    <property>
+                        <name>TimeManagementActionLiveFrameRate</name>
+                        <value>120.000000</value>
+                        <defaultValue>120.000000</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="RenameMarkersAction">
+                <properties>
+                    <property>
+                        <name>AssetStringAction</name>
+                        <value>Unable to find skeleton markers</value>
+                        <defaultValue>Unable to find skeleton markers</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="GenerateMarkersAction">
+                <properties>
+                    <property>
+                        <name>AssetStringAction</name>
+                        <value>Unable to find skeleton markers</value>
+                        <defaultValue>Unable to find skeleton markers</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="UpdateMarkersAction">
+                <properties>
+                    <property>
+                        <name>AssetStringAction</name>
+                        <value>Unable to find skeleton markers</value>
+                        <defaultValue>Unable to find skeleton markers</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="RecalibrateFromMarkersAction">
+                <properties>
+                    <property>
+                        <name>AssetStringAction</name>
+                        <value>Unable to find skeleton markers</value>
+                        <defaultValue>Unable to find skeleton markers</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="DuplicateAssetsAction">
+                <properties>
+                    <property>
+                        <name>AssetStringAction</name>
+                        <value>Unable to find skeleton markers</value>
+                        <defaultValue>Unable to find skeleton markers</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="CreateRigidBody">
+                <properties/>
+            </action>
+            <action ID="AssetExportMarkersAction">
+                <properties>
+                    <property>
+                        <name>AssetExportMarkersFileName</name>
+                        <value>D:/Corentin_RCV/Corentin_manips</value>
+                        <defaultValue>D:/Corentin_RCV/Corentin_manips</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="RevealTakeAction">
+                <properties/>
+            </action>
+            <action ID="TakeExportTrackingDataUIAction">
+                <properties>
+                    <property>
+                        <name>TakeFileFilterPropertyName</name>
+                        <value>C3D Format (*.c3d)</value>
+                        <defaultValue>C3D Format (*.c3d)</defaultValue>
+                    </property>
+                </properties>
+            </action>
+            <action ID="TakeExportVideoUIAction">
+                <properties/>
+            </action>
+            <action ID="ExportCalibrationAction">
+                <properties/>
+            </action>
+            <action ID="TakeDelete2DDataUIAction">
+                <properties/>
+            </action>
+            <action ID="AssetsDeletionUIAction">
+                <properties/>
+            </action>
+            <action ID="AssetsSelectionUIAction">
+                <properties/>
+            </action>
+            <action ID="RenameTakeUIAction">
+                <properties/>
+            </action>
+            <action ID="ImportTakeAction">
+                <properties/>
+            </action>
+            <action ID="ExportMetadataAction">
+                <properties/>
+            </action>
+            <action ID="CameraPresetAction">
+                <properties/>
+            </action>
+        </actionProperties>
+    </ActionManager>
+    <PropertyDefinitionWarehouse version="1">
+        <definitions>
+            <definition>
+                <name>CameraNodeIsCalibrated</name>
+                <advanced>true</advanced>
+            </definition>
+        </definitions>
+    </PropertyDefinitionWarehouse>
+    <LabelingPanel>
+        <properties>
+            <property>
+                <name>LabelingRange</name>
+                <value>0</value>
+                <defaultValue>0</defaultValue>
+            </property>
+        </properties>
+    </LabelingPanel>
+    <TakeManager version="1">
+        <sessions>
+            <session path="C:/Users/LaboMIP/Documents/OptiTrack/Session 2021-01-11/"/>
+            <session path="D:/Aurelie/20210126/Optitrack/"/>
+            <session path="D:/Corentin_RCV/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-02-26/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-03-01/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-03-15/"/>
+            <session path="D:/AnneT/"/>
+            <session path="D:/TestEcho3D_Marion_Aurelie/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-03-19/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-03-31/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-04-02/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-04-07/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-04-08/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-05-09/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021 - 04 - 20/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-04-22/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021 - 04 - 23/"/>
+            <session path="D:/A&amp;M&amp;H/Calibrations/2021-05-27/"/>
+        </sessions>
+        <current_session path="D:/A&amp;M&amp;H/Calibrations/2021-05-27/"/>
+    </TakeManager>
+    <PluginDevices/>
+    <NodeAssets>
+        <rigid_body version="1.1" id="c2591cca056803ae:3413956c023011eb">
+            <markers>
+                <marker id="0:c836">
+                    <position>-0.0251418,-0.00415614,-0.0418581</position>
+                    <size>0.012</size>
+                    <residual>0.000478528</residual>
+                    <label_id>1</label_id>
+                </marker>
+                <marker id="0:c882">
+                    <position>0.0628297,0.00344923,0.00765012</position>
+                    <size>0.012</size>
+                    <residual>0.00042897</residual>
+                    <label_id>2</label_id>
+                </marker>
+                <marker id="0:c888">
+                    <position>0.0082752,0.000362992,-0.000291675</position>
+                    <size>0.012</size>
+                    <residual>0.000391585</residual>
+                    <label_id>3</label_id>
+                </marker>
+                <marker id="0:c88e">
+                    <position>-0.045963,0.000343949,0.0344996</position>
+                    <size>0.012</size>
+                    <residual>0.00052213</residual>
+                    <label_id>4</label_id>
+                </marker>
+            </markers>
+            <properties>
+                <property>
+                    <name>NodeName</name>
+                    <value>Probe</value>
+                    <defaultValue>Probe</defaultValue>
+                </property>
+                <property>
+                    <name>Color</name>
+                    <value>11010194</value>
+                    <defaultValue>11010194</defaultValue>
+                </property>
+                <property>
+                    <name>UserData</name>
+                    <value>3</value>
+                    <defaultValue>3</defaultValue>
+                </property>
+                <property>
+                    <name>AcquisitionFrames</name>
+                    <value>1</value>
+                </property>
+                <property>
+                    <name>MarkerLocation0</name>
+                    <value>-0.0251418,-0.00415614,-0.0418581</value>
+                    <defaultValue>-0.0251418,-0.00415614,-0.0418581</defaultValue>
+                </property>
+                <property>
+                    <name>MarkerLocation1</name>
+                    <value>0.0628297,0.00344923,0.00765012</value>
+                    <defaultValue>0.0628297,0.00344923,0.00765012</defaultValue>
+                </property>
+                <property>
+                    <name>MarkerLocation2</name>
+                    <value>0.0082752,0.000362992,-0.000291675</value>
+                    <defaultValue>0.0082752,0.000362992,-0.000291675</defaultValue>
+                </property>
+                <property>
+                    <name>MarkerLocation3</name>
+                    <value>-0.045963,0.000343949,0.0344996</value>
+                    <defaultValue>-0.045963,0.000343949,0.0344996</defaultValue>
+                </property>
+            </properties>
+            <MarkerNames ReorderMarkers="true">
+                <!--To rename markers, modify the value in the "name" tag.-->
+                <Marker name="Marker1" oldName="Marker1"/>
+                <Marker name="Marker2" oldName="Marker2"/>
+                <Marker name="Marker3" oldName="Marker3"/>
+                <Marker name="Marker4" oldName="Marker4"/>
+                <!--Renaming markers added to a skeletons: If a fourth marker is added manually to the head of a skeleton, then add a tag such as <Marker name="Head_4" oldName="Head_4" /> where the values in name and oldName are the bone segment (case matters) followed by the marker number.-->
+                <!--Skeleton Bone Segment Names: Head, Neck, Chest, Ab, Hip, LShoulder, LUArm, LFArm, LHand, RShoulder, RUArm, RFArm, RHand, LThigh, LShin, LFoot, LToe, RThigh, RShin, RFoot, RToe.-->
+                <!--If "ReorderMarkers = True" the order here persists into the labeling pane.-->
+            </MarkerNames>
+            <MarkerColors>
+                <!--The "name" tag in this section corresponds with the "name" values in <MarkerNames>.-->
+                <Marker name="Marker1" color="146 0 168" movable="false"/>
+                <Marker name="Marker2" color="146 0 168" movable="false"/>
+                <Marker name="Marker3" color="146 0 168" movable="false"/>
+                <Marker name="Marker4" color="146 0 168" movable="false"/>
+                <!--If nothing appears in this section it is because you need to update or generate colors. You can do this in the asset's context menu.-->
+                <!--The movable="false" tag currently is not functioning.-->
+            </MarkerColors>
+            <MarkerSticks>
+                <!--The "origin" and "end" tags in this section correspond with the "name" values in <MarkerNames>-->
+            </MarkerSticks>
+        </rigid_body>
+        <rigid_body version="1.1" id="c2591cca056803ae:48839df6022d11eb">
+            <markers>
+                <marker id="0:c47b">
+                    <position>0.0175422,0.00239372,0.0265648</position>
+                    <size>0.012</size>
+                    <residual>0.000334352</residual>
+                    <label_id>1</label_id>
+                </marker>
+                <marker id="0:c47d">
+                    <position>0.0557954,-0.00287506,-0.0230237</position>
+                    <size>0.012</size>
+                    <residual>0.000266237</residual>
+                    <label_id>2</label_id>
+                </marker>
+                <marker id="0:c4e7">
+                    <position>-0.027263,0.00238594,0.0199754</position>
+                    <size>0.012</size>
+                    <residual>0.000250187</residual>
+                    <label_id>3</label_id>
+                </marker>
+                <marker id="0:c4e8">
+                    <position>-0.0460746,-0.00190461,-0.0235165</position>
+                    <size>0.012</size>
+                    <residual>0.000277361</residual>
+                    <label_id>4</label_id>
+                </marker>
+            </markers>
+            <properties>
+                <property>
+                    <name>NodeName</name>
+                    <value>Stylus</value>
+                    <defaultValue>Stylus</defaultValue>
+                </property>
+                <property>
+                    <name>Color</name>
+                    <value>16771840</value>
+                    <defaultValue>16771840</defaultValue>
+                </property>
+                <property>
+                    <name>UserData</name>
+                    <value>2</value>
+                    <defaultValue>2</defaultValue>
+                </property>
+                <property>
+                    <name>AcquisitionFrames</name>
+                    <value>1</value>
+                </property>
+                <property>
+                    <name>MarkerLocation0</name>
+                    <value>0.0175422,0.00239372,0.0265648</value>
+                    <defaultValue>0.0175422,0.00239372,0.0265648</defaultValue>
+                </property>
+                <property>
+                    <name>MarkerLocation1</name>
+                    <value>0.0557954,-0.00287506,-0.0230237</value>
+                    <defaultValue>0.0557954,-0.00287506,-0.0230237</defaultValue>
+                </property>
+                <property>
+                    <name>MarkerLocation2</name>
+                    <value>-0.027263,0.00238594,0.0199754</value>
+                    <defaultValue>-0.027263,0.00238594,0.0199754</defaultValue>
+                </property>
+                <property>
+                    <name>MarkerLocation3</name>
+                    <value>-0.0460746,-0.00190461,-0.0235165</value>
+                    <defaultValue>-0.0460746,-0.00190461,-0.0235165</defaultValue>
+                </property>
+            </properties>
+            <MarkerNames ReorderMarkers="true">
+                <!--To rename markers, modify the value in the "name" tag.-->
+                <Marker name="Marker1" oldName="Marker1"/>
+                <Marker name="Marker2" oldName="Marker2"/>
+                <Marker name="Marker3" oldName="Marker3"/>
+                <Marker name="Marker4" oldName="Marker4"/>
+                <!--Renaming markers added to a skeletons: If a fourth marker is added manually to the head of a skeleton, then add a tag such as <Marker name="Head_4" oldName="Head_4" /> where the values in name and oldName are the bone segment (case matters) followed by the marker number.-->
+                <!--Skeleton Bone Segment Names: Head, Neck, Chest, Ab, Hip, LShoulder, LUArm, LFArm, LHand, RShoulder, RUArm, RFArm, RHand, LThigh, LShin, LFoot, LToe, RThigh, RShin, RFoot, RToe.-->
+                <!--If "ReorderMarkers = True" the order here persists into the labeling pane.-->
+            </MarkerNames>
+            <MarkerColors>
+                <!--The "name" tag in this section corresponds with the "name" values in <MarkerNames>.-->
+                <Marker name="Marker1" color="0 235 255" movable="false"/>
+                <Marker name="Marker2" color="0 235 255" movable="false"/>
+                <Marker name="Marker3" color="0 235 255" movable="false"/>
+                <Marker name="Marker4" color="0 235 255" movable="false"/>
+                <!--If nothing appears in this section it is because you need to update or generate colors. You can do this in the asset's context menu.-->
+                <!--The movable="false" tag currently is not functioning.-->
+            </MarkerColors>
+            <MarkerSticks>
+                <!--The "origin" and "end" tags in this section correspond with the "name" values in <MarkerNames>-->
+            </MarkerSticks>
+        </rigid_body>
+    </NodeAssets>
+    <DeviceAssets>
+        <sync_device version="1.0" id="60755a6dbba4059d:218bb45bbeef11eb">
+            <properties>
+                <property>
+                    <name>NodeName</name>
+                    <value>OptiHub v2 #138939</value>
+                    <defaultValue>OptiHub v2 #138939</defaultValue>
+                </property>
+                <property>
+                    <name>SyncDeviceConnected</name>
+                    <value>true</value>
+                </property>
+                <property>
+                    <name>SyncDeviceModel</name>
+                    <value>OptiHub 2</value>
+                </property>
+                <property>
+                    <name>SyncDeviceSerial</name>
+                    <value>138939</value>
+                </property>
+                <property>
+                    <name>SyncInputSource</name>
+                    <value>0</value>
+                    <defaultValue>0</defaultValue>
+                    <constraints>
+                        <constraint name="Internal Sync" value="0"/>
+                        <constraint name="Sync In" value="2"/>
+                        <constraint name="USB Sync" value="7"/>
+                    </constraints>
+                </property>
+                <property>
+                    <name>SyncOutput1Enabled</name>
+                    <value>true</value>
+                </property>
+                <property>
+                    <name>kSyncFinalCameraRate</name>
+                    <value>120.000000</value>
+                </property>
+                <property>
+                    <name>SyncOutput1PulseDuration</name>
+                    <value>0</value>
+                    <defaultValue>0</defaultValue>
+                    <constraints>
+                        <constraint name="Exposure Time" value="0"/>
+                        <constraint name="Pass-Through" value="1"/>
+                        <constraint name="Recording Gate" value="2"/>
+                        <constraint name="Gated Exposure Time" value="3"/>
+                    </constraints>
+                </property>
+                <property>
+                    <name>SyncOutput2Enabled</name>
+                    <value>false</value>
+                </property>
+                <property>
+                    <name>SyncOutput2PulseDuration</name>
+                    <value>0</value>
+                </property>
+                <property>
+                    <name>SyncOutput3Enabled</name>
+                    <value>false</value>
+                </property>
+                <property>
+                    <name>SyncOutput3PulseDuration</name>
+                    <value>0</value>
+                </property>
+                <property>
+                    <name>SyncOutput4Enabled</name>
+                    <value>false</value>
+                </property>
+                <property>
+                    <name>SyncOutput4PulseDuration</name>
+                    <value>0</value>
+                </property>
+                <property>
+                    <name>SyncOutputVesaEnabled</name>
+                    <value>false</value>
+                </property>
+                <property>
+                    <name>SyncOutputVesaPulseDuration</name>
+                    <value>0</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorInternalClock</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorSMPTE</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorGenlock</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorIsolated</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorLoZ</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorHiZ</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorInput1</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorInput2</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorInput3</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorVESA</name>
+                    <value>0.000000</value>
+                </property>
+                <property>
+                    <name>SyncDeviceMonitorReserved</name>
+                    <value>0.000000</value>
+                </property>
+            </properties>
+        </sync_device>
+        <camera_node_list>
+            <camera_node>
+                <properties>
+                    <property>
+                        <name>CameraNodeCameraSerialNumber</name>
+                        <value>202138</value>
+                        <defaultValue>202138</defaultValue>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraFrameRateDivisor</name>
+                        <value>1</value>
+                        <constraints>
+                            <constraint name="x1 (120 Hz)" value="1"/>
+                            <constraint name="x1/2 (60 Hz)" value="2"/>
+                            <constraint name="x1/4 (30 Hz)" value="4"/>
+                        </constraints>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraExposure</name>
+                        <value>200</value>
+                        <defaultValue>500</defaultValue>
+                        <constraints>
+                            <constraint name="Min" value="1"/>
+                            <constraint name="Max" value="7500"/>
+                        </constraints>
+                    </property>
+                </properties>
+            </camera_node>
+            <camera_node>
+                <properties>
+                    <property>
+                        <name>CameraNodeCameraSerialNumber</name>
+                        <value>308073</value>
+                        <defaultValue>308073</defaultValue>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraFrameRateDivisor</name>
+                        <value>1</value>
+                        <constraints>
+                            <constraint name="x1 (120 Hz)" value="1"/>
+                            <constraint name="x1/2 (60 Hz)" value="2"/>
+                            <constraint name="x1/4 (30 Hz)" value="4"/>
+                        </constraints>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraExposure</name>
+                        <value>200</value>
+                        <defaultValue>500</defaultValue>
+                        <constraints>
+                            <constraint name="Min" value="1"/>
+                            <constraint name="Max" value="7500"/>
+                        </constraints>
+                    </property>
+                </properties>
+            </camera_node>
+            <camera_node>
+                <properties>
+                    <property>
+                        <name>CameraNodeCameraSerialNumber</name>
+                        <value>202001</value>
+                        <defaultValue>202001</defaultValue>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraFrameRateDivisor</name>
+                        <value>1</value>
+                        <constraints>
+                            <constraint name="x1 (120 Hz)" value="1"/>
+                            <constraint name="x1/2 (60 Hz)" value="2"/>
+                            <constraint name="x1/4 (30 Hz)" value="4"/>
+                        </constraints>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraExposure</name>
+                        <value>200</value>
+                        <defaultValue>500</defaultValue>
+                        <constraints>
+                            <constraint name="Min" value="1"/>
+                            <constraint name="Max" value="7500"/>
+                        </constraints>
+                    </property>
+                </properties>
+            </camera_node>
+            <camera_node>
+                <properties>
+                    <property>
+                        <name>CameraNodeCameraSerialNumber</name>
+                        <value>202133</value>
+                        <defaultValue>202133</defaultValue>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraFrameRateDivisor</name>
+                        <value>1</value>
+                        <constraints>
+                            <constraint name="x1 (120 Hz)" value="1"/>
+                            <constraint name="x1/2 (60 Hz)" value="2"/>
+                            <constraint name="x1/4 (30 Hz)" value="4"/>
+                        </constraints>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraExposure</name>
+                        <value>200</value>
+                        <defaultValue>500</defaultValue>
+                        <constraints>
+                            <constraint name="Min" value="1"/>
+                            <constraint name="Max" value="7500"/>
+                        </constraints>
+                    </property>
+                </properties>
+            </camera_node>
+            <camera_node>
+                <properties>
+                    <property>
+                        <name>CameraNodeCameraSerialNumber</name>
+                        <value>202137</value>
+                        <defaultValue>202137</defaultValue>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraFrameRateDivisor</name>
+                        <value>1</value>
+                        <constraints>
+                            <constraint name="x1 (120 Hz)" value="1"/>
+                            <constraint name="x1/2 (60 Hz)" value="2"/>
+                            <constraint name="x1/4 (30 Hz)" value="4"/>
+                        </constraints>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraExposure</name>
+                        <value>200</value>
+                        <defaultValue>500</defaultValue>
+                        <constraints>
+                            <constraint name="Min" value="1"/>
+                            <constraint name="Max" value="7500"/>
+                        </constraints>
+                    </property>
+                </properties>
+            </camera_node>
+            <camera_node>
+                <properties>
+                    <property>
+                        <name>CameraNodeCameraSerialNumber</name>
+                        <value>308056</value>
+                        <defaultValue>308056</defaultValue>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraFrameRateDivisor</name>
+                        <value>1</value>
+                        <constraints>
+                            <constraint name="x1 (120 Hz)" value="1"/>
+                            <constraint name="x1/2 (60 Hz)" value="2"/>
+                            <constraint name="x1/4 (30 Hz)" value="4"/>
+                        </constraints>
+                    </property>
+                    <property>
+                        <name>CameraNodeCameraExposure</name>
+                        <value>200</value>
+                        <defaultValue>500</defaultValue>
+                        <constraints>
+                            <constraint name="Min" value="1"/>
+                            <constraint name="Max" value="7500"/>
+                        </constraints>
+                    </property>
+                </properties>
+            </camera_node>
+        </camera_node_list>
+    </DeviceAssets>
+    <PaneManager>
+        <Panes>
+            <PANE_12>
+                <ControlDeck CurrentProperty="1"/>
+            </PANE_12>
+            <PANE_22/>
+            <PANE_23>
+                <DataManager>
+                    <Table SelectedModel="Simple" Sort="3" SortOrder="0">
+                        <Model Name="Simple" ReadOnly="1" TreeOpen="0" Widths="36,35,35,228,39,39,56,59,54,63,169,110,105,110,200,120"/>
+                        <Model Name="Advanced" ReadOnly="1" TreeOpen="0" Widths="36,35,35,228,39,39,56,59,54,63,169,110,105,110,200,120"/>
+                        <Model Name="Classic" ReadOnly="1" TreeOpen="0" Widths="36,35,35,195,39,39,56,59,54,63,169,110,105,110,200,120"/>
+                    </Table>
+                </DataManager>
+            </PANE_23>
+            <PANE_24>
+                <Assets>
+                    <Table SelectedModel="Simple" Sort="3" SortOrder="0">
+                        <Model Name="Simple" ReadOnly="0" TreeOpen="0" Visibility="0,1,2,3" Order="0,1,2,3" Widths="0"/>
+                    </Table>
+                </Assets>
+            </PANE_24>
+            <PANE_25/>
+            <PANE_26/>
+            <PANE_27/>
+            <PANE_28/>
+            <PANE_29>
+                <Devices/>
+            </PANE_29>
+            <PANE_30>
+                <Devices>
+                    <Camera>
+                        <Table SelectedModel="SimpleCameraTableModel" Sort="4" SortOrder="1" CompactView="0">
+                            <Model Name="SimpleCameraTableModel" ReadOnly="0" TreeOpen="0" Visibility="0,1,2,3,4,5" Order="0,1,2,3,4,5,6,7,8,9,10,11,12" Widths="30,48,67,43,64,35,50,82,70,50,83,55,68"/>
+                        </Table>
+                    </Camera>
+                    <ColorCamera>
+                        <Table SelectedModel="SimpleColor" Sort="0" SortOrder="0" CompactView="0">
+                            <Model Name="SimpleColor" ReadOnly="0" TreeOpen="0" Visibility="0,1,2,3,4,5" Order="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14" Widths="29,45,51,43,63,60,105,70,40,55,83,56,48,68,35"/>
+                        </Table>
+                    </ColorCamera>
+                    <ForcePlate>
+                        <Table SelectedModel="Simple" Sort="1" SortOrder="0" CompactView="0">
+                            <Model Name="Simple" ReadOnly="0" TreeOpen="0" Visibility="0,1,2,3,4" Order="0,1,2,3,4,5,6" Widths="30,48,65,70,40,90,85"/>
+                        </Table>
+                    </ForcePlate>
+                    <DataAcquisition>
+                        <Table SelectedModel="Simple" Sort="1" SortOrder="0" CompactView="0">
+                            <Model Name="Simple" ReadOnly="0" TreeOpen="0" Visibility="0,1,2,3,4,5" Order="0,1,2,3,4,5,6,7" Widths="30,48,65,70,40,33,90,85"/>
+                        </Table>
+                    </DataAcquisition>
+                    <Sync>
+                        <Table SelectedModel="Simple" Sort="0" SortOrder="0" CompactView="0">
+                            <Model Name="Simple" ReadOnly="0" TreeOpen="0" Visibility="0,1" Order="0,1" Widths="0"/>
+                        </Table>
+                    </Sync>
+                    <GeneralDevices>
+                        <Table SelectedModel="Simple" Sort="0" SortOrder="0" CompactView="0">
+                            <Model Name="Simple" ReadOnly="0" TreeOpen="0" Visibility="0,1,2,3" Order="0,1,2,3,4,5,6" Widths="90,85,65,33,48,70,30"/>
+                        </Table>
+                    </GeneralDevices>
+                </Devices>
+            </PANE_30>
+            <PANE_31/>
+            <PANE_32>
+                <Calibration/>
+            </PANE_32>
+        </Panes>
+    </PaneManager>
+</Profile>

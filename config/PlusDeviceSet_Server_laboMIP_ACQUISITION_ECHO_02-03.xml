@@ -1,0 +1,79 @@
+<PlusConfiguration version="2.7" PlusRevision="Plus-2.8.0.62873a16 - Win64">
+  <DataCollection StartupDelaySec="1">
+    <DeviceSet Name="PlusServer: LaboMIP ACQUISITION ECHO0203" Description="Configuration file with Optitrack Flex 13 (Motive 2.2.0) and video feed from the SSI ultrasound Probe SL10-2 with CAM LINK 4K USB." />
+    <Device
+      Id="TrackerDevice"
+      Type="OptiTrack"
+      ToolReferenceFrame="Tracker"
+      Profile="motiveprofilefile.xml"
+      AttachToRunningMotive="TRUE"
+      MotiveDataDescriptionsUpdateTimeSec="1.0"
+      LocalTimeOffsetSec="0.148">
+      <DataSources>
+        <DataSource Type="Tool" Id="Probe" BufferSize="150" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="TrackerStream">
+          <DataSource Type="Tool" Id="Probe" />
+        </OutputChannel>
+      </OutputChannels>
+    </Device>
+    <Device Id="VideoDevice" Type="MmfVideo" FrameSize="1920 1080" VideoFormat="YUY2" CaptureDeviceId="0">
+      <DataSources>
+        <DataSource
+          Type="Video"
+          Id="Video"
+          PortUsImageOrientation="UF"
+          ClipRectangleOrigin="240 120 0"
+          ClipRectangleSize="920 880 1"
+          BufferSize="150" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="VideoStream" VideoDataSourceId="Video" />
+      </OutputChannels>
+    </Device>
+    <Device Id="TrackedVideoDevice" Type="VirtualMixer">
+      <InputChannels>
+        <InputChannel Id="TrackerStream" />
+        <InputChannel Id="VideoStream" />
+      </InputChannels>
+      <OutputChannels>
+        <OutputChannel Id="TrackedVideoStream" />
+      </OutputChannels>
+    </Device>
+  </DataCollection>
+  <PlusOpenIGTLinkServer MaxNumberOfIgtlMessagesToSend="1" MaxTimeSpentWithProcessingMs="50" ListeningPort="18944" SendValidTransformsOnly="TRUE" OutputChannelId="TrackedVideoStream">
+    <DefaultClientInfo>
+      <MessageTypes>
+	    <Message Type="IMAGE" />
+        <Message Type="TRANSFORM" />
+      </MessageTypes>
+      <TransformNames>
+		<Transform Name="ProbeToTracker" />
+      </TransformNames>
+	  <ImageNames>
+        <Image Name="Image" EmbeddedTransformToFrame="Image" />
+      </ImageNames>
+    </DefaultClientInfo>
+  </PlusOpenIGTLinkServer>
+  <fCal
+    StylusModelId="StylusModel"
+    ImageDisplayableObjectId="LiveImage"
+    NumberOfCalibrationImagesToAcquire="200"
+    NumberOfValidationImagesToAcquire="100"
+    NumberOfStylusCalibrationPointsToAcquire="200"
+    RecordingIntervalMs="100"
+    MaxTimeSpentWithProcessingMs="70"
+    ImageCoordinateFrame="Image"
+    ProbeCoordinateFrame="Probe"
+    ReferenceCoordinateFrame="Tracker"
+    TransducerOriginCoordinateFrame="TransducerOrigin"
+    TransducerOriginPixelCoordinateFrame="TransducerOriginPixel"
+    TemporalCalibrationDurationSec="20"
+    FixedChannelId="VideoStream"
+    FixedSourceId="Video"
+    MovingChannelId="TrackerStream"
+    MovingSourceId="ProbeToTracker"
+    DefaultSelectedChannelId="TrackedVideoStream"
+    FreeHandStartupDelaySec="5" />
+</PlusConfiguration>
