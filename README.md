@@ -12,3 +12,7 @@ Frouin A, Guenanten H, Le Sant G, Lacourpaille L, Liebard M, Sarcher A, McNair P
 **&#8594; If you feel that some steps of the tutorial can be improved, please share !**  
 
 *Mailing contact : aurelie.sarcher@univ-nantes.fr*
+
+**&#8594; UPDATE 21/11/2024 : The original tutorials are made for SuperSonicImagine ultrasounds and Optitrack motion capture system, however thanks to Paul Ritsche in University of Basel, we know have also a tutorial for Telemed/Siemens ultrasound and Optitrack motion capture system**  
+
+*Tutorial called "Docs_3DUS_Siemens_Telemed.pdf"*
