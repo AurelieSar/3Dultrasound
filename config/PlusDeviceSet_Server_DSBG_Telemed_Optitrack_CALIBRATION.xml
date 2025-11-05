@@ -1,0 +1,71 @@
+<PlusConfiguration version="2.8" PlusRevision="Plus-2.8.0.20191105 - Win32">
+
+  <DataCollection StartupDelaySec="1.0">
+    <DeviceSet Name="PlusServer: DSBG 3D US Telemed and Optitrack device CALIBRATION" Description="Broadcasting acquired video through OpenIGTLink. Configuration file with Optitrack Flex 3 (Motive 3.1.0) and video feed from the Telemed ultrasound Probe LF9." />
+
+    <!-- Optitrack Configuration -->
+    <Device Id="TrackerDevice" Type="OptiTrack" ToolReferenceFrame="Tracker" Profile="motiveprofilefile.xml" ProjectFile="motiveprofilefile.xml" AttachToRunningMotive="TRUE" MotiveDataDescriptionsUpdateTimeSec="1.0" LocalTimeOffsetSec="0.2566">
+      <DataSources>
+        <DataSource Type="Tool" Id="Stylus" BufferSize="150" />
+        <DataSource Type="Tool" Id="Probe" BufferSize="150" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="TrackerStream">
+          <DataSource Type="Tool" Id="Stylus" />
+          <DataSource Type="Tool" Id="Probe" />
+        </OutputChannel>
+      </OutputChannels>
+    </Device>
+
+    <!-- Telemed Configuration -->
+    <Device Id="VideoDevice" Type="TelemedVideo">
+      <DataSources>
+        <DataSource Type="Video" Id="Video" PortUsImageOrientation="UN" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="VideoStream" VideoDataSourceId="Video" />
+      </OutputChannels>
+    </Device>
+
+    <!-- Caputre Decvice Configuration -->
+    <Device Id="CaptureDevice" Type="VirtualCapture" BaseFilename="RecordingTest.igs.mha" EnableCapturingOnStart="FALSE">
+      <InputChannels>
+        <InputChannel Id="VideoStream" />
+      </InputChannels>
+    </Device>
+
+    <!-- Video and Optitrack Mixer -->
+    <Device Id="TrackedVideoDevice" Type="VirtualMixer">
+      <InputChannels>
+        <InputChannel Id="TrackerStream" />
+        <InputChannel Id="VideoStream" />
+      </InputChannels>
+      <OutputChannels>
+        <OutputChannel Id="TrackedVideoStream" />
+      </OutputChannels>
+    </Device>
+
+  </DataCollection>
+
+  <!-- PlusIGT configuration -->
+  <PlusOpenIGTLinkServer MaxNumberOfIgtlMessagesToSend="1" MaxTimeSpentWithProcessingMs="50" ListeningPort="18944" SendValidTransformsOnly="TRUE" OutputChannelId="TrackedVideoStream">
+    <DefaultClientInfo>
+      <MessageTypes>
+        <Message Type="IMAGE" />
+        <Message Type="TRANSFORM" />
+      </MessageTypes>
+      <TransformNames>
+        <Transform Name="ProbeToTracker" />
+        <Transform Name="StylusToTracker" />
+        <Transform Name="StylusToProbe" />
+      </TransformNames>
+      <ImageNames>
+        <Image Name="Image" EmbeddedTransformToFrame="Image" />
+      </ImageNames>
+    </DefaultClientInfo>
+  </PlusOpenIGTLinkServer>
+
+  <!-- Fcal Configuration  -->
+  <fCal StylusModelId="StylusModel" ImageDisplayableObjectId="LiveImage" NumberOfCalibrationImagesToAcquire="200" NumberOfValidationImagesToAcquire="100" NumberOfStylusCalibrationPointsToAcquire="200" RecordingIntervalMs="100" MaxTimeSpentWithProcessingMs="70" ImageCoordinateFrame="Image" ProbeCoordinateFrame="Probe" ReferenceCoordinateFrame="Tracker" TransducerOriginCoordinateFrame="TransducerOrigin" TransducerOriginPixelCoordinateFrame="TransducerOriginPixel" TemporalCalibrationDurationSec="20" FixedChannelId="VideoStream" FixedSourceId="Video" MovingChannelId="TrackerStream" MovingSourceId="ProbeToTracker" DefaultSelectedChannelId="TrackedVideoStream" FreeHandStartupDelaySec="5" />
+
+</PlusConfiguration>
